@@ -6,53 +6,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment Solution for fodule 2</title>
     <style>
+        * {
+            margin: top;
+            padding: 10px;
+            box-sizing: border-box;
+        }
         .menu{
 
             text-align: center;
             font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
             font-weight: 500%;
                     }
-        div{
+        .item{
             background-color: blueviolet;
-            width: 400px;
+            width: auto;
             height: auto;
             margin: 10px 10px 10 10px 10px;
-            padding: 10px 10px 10px 10px;
+            padding: 1rem;
             border:3px black solid;
-            display: grid;
+           
 
         }
-        .section1{
+        .container{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows:1fr ;
+            grid-column-gap: 20px;
+            
+        }   
+        .item1{
             /*background-color: blueviolet;
             width: auto;
             height: auto ;
-            margin: 10px 10px 10 10px 10px;
-            padding: 10px 10px 10px 10px;
-            border:3px black solid*/
+            */
+            
             
 
         }
-        .section2{
+        /*.section2{
            /* background-color: blueviolet;
             width: auto;
             height: auto;
             margin: 10px 10px 10 10px 10px;
             padding: 10px 10px 10px 10px;
-            border:3px black solid*/
+            border:3px black solid
            
            
 
         }
-        .section3{
+        /*.section3{
             /*background-color: blueviolet;
             width: auto;
             height: auto;
             margin: 10px 10px 10 10px 10px;
             padding: 10px 10px 10px 10px;
-            border:3px black solid*/
+            border:3px black solid
             
 
-        }
+        }*/
 
         .topic {
             
@@ -61,13 +72,13 @@
             width :200px;
             height: auto;
             /*box-sizing: border-box;
-            box-align: right;*/
-            border : 3px black solid;        
+            box-align: right;
+            border : 3px black solid;      
                                
             
            
 
-        }
+        }*/
 
 
 
@@ -77,19 +88,24 @@
 </head>
 <body>
     <h1 class="menu">Our Menu</h1>
-   <div class="section1">
+   <div class="container">
+
+       <div class="item">
         <h2 class = "topic">Chicken</h2> 
         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop p.</p>
+          </div>
 
-   </div> 
-   <div class="section2">
-       <h2 class = "topic">Beef </h2>
-       <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.</p>
-    </div>
-    <div class="section3">
-        <h2 class = "topic">Sushi</h2>
-        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.</p>
-    </div>
+       <div class="item">
+        <h2 class = "topic">Chicken</h2> 
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop p.</p>
+         </div>
+
+       <div class="item">
+        <h2 class = "topic">Chicken</h2> 
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop p.</p>
+       </div>
+       </div>
+        
     
 </body>
 </html>
