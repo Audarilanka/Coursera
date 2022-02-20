@@ -1,103 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment Solution for fodule 2</title>
     <style>
-        
-        .menu{
-
+        .menu {
             text-align: center;
             font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
             font-weight: 500%;
-                    }
-        .item{
+        }
+        
+        .item {
             background-color: rgb(145, 138, 151);
             width: auto;
             height: auto;
             margin: 40px 20px 20px 20px;
-            padding: 1rem;
+            padding: 0;
             text-align: justify;
-            border:3px black solid;
-           
-
+            border: 3px black solid;
         }
-        .container{
+        
+        .container {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
-            grid-template-rows:1fr ;
+            grid-template-rows: 1fr;
             grid-column-gap: 20px;
-            
-        }   
-        .pink{
+        }
+        
+        .pink {
             background-color: rgb(248, 130, 195);
-            
-            
-            
-            
-
         }
-        .red{
+        
+        .red {
             background-color: blueviolet;
-            
-            
-           
-           
-
         }
-        .yellow{
+        
+        .yellow {
             background-color: blueviolet;
-            
-            
-            
-
         }
-
+        
         .topic {
-            
-            text-align:center ;
-            background-color: brown;
-            width :200px;
+            text-align: center;
+            background-color: rgb(82, 155, 106);
+            width: 200px;
             height: auto;
             /*padding: 10px 10px 10px 10px;*/
-            border:3px black solid;
+            border: 3px black solid;
             margin: 0%;
-            
-              
-                               
-            
-           
-
+            box-sizing: border-box;
+            /*display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr;*/
         }
-
-
-
-
+        
+        .para {
+            padding: 10px 10px 10px 10px;
+        }
     </style>
 
 </head>
+
 <body>
     <h1 class="menu">Our Menu</h1>
-   <div class="container">
+    <div class="container">
 
-       <div class="item1">
-        <h2 class = "topic pink">Chicken</h2> 
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop p.</p>
-          </div>
+        <div class="item section1">
 
-       <div class="item2">
-        <h2 class = "topic red">Chicken</h2> 
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop p.</p>
-         </div>
 
-       <div class="item3">
-        <h2 class = "topic yellow">Chicken</h2> 
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop p.</p>
-       </div>
-       </div>
-        
-    
+            <h2 class="topic pink">Chicken</h2>
+
+
+            <p class="para">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
+                book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more
+                recently with desktop p.</p>
+        </div>
+
+        <div class="item section2">
+            <h2 class="topic red">Beef</h2>
+            <p class="para">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
+                book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more
+                recently with desktop p.</p>
+        </div>
+
+        <div class="item section3">
+            <h2 class="topic yellow">Sushi</h2>
+            <p class="para"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
+                book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more
+                recently with desktop p.</p>
+        </div>
+    </div>
+
+
 </body>
+
 </html>
