@@ -102,28 +102,29 @@
                 width: 100%;
             }*/
         
-        @media (max-width:1200px) {
+        @media (min-width:992px) {
             .container {
                 grid-template-columns: 1fr 1fr 1fr;
                 grid-template-rows: 1fr;
+                grid-template-areas: "item"
+            }
+        }
+        
+        @media (min-width:768) and (max-width:991px) {
+            .container {
+                grid-template-columns: 1fr;
+                grid-template-rows: 1fr 1fr 1fr;
                 grid-template-areas: "setion1" "section2" "section3"
             }
         }
         
-        @media (max-width:550px) {
+        @media (max-width:767px) {
             .container {
                 grid-template-columns: 1fr;
                 grid-template-rows: 1fr 1fr 1fr;
                 grid-template-areas: "item"
             }
         }
-        /*@media (max-width:550px) {
-            .container {
-                grid-template-columns: 1fr;
-                grid-template-rows: 1fr 1fr 1fr;
-                grid-template-areas: "setion1" "section2" "section3"
-            }
-        }*/
     }
     </style>
 </head>
@@ -142,7 +143,7 @@
             </p>
         </div>
 
-        <div class="item section2">
+        <div class="item section1">
             <h2 class="topic red">Beef</h2>
             <p class="para">
                 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has
