@@ -17,7 +17,7 @@
             background-color: rgb(145, 138, 151);
             width: auto;
             height: auto;
-            margin: 40px 20px 20px 20px;
+            margin: auto;
             padding: 0;
             text-align: justify;
             border: 1px black solid;
@@ -60,47 +60,6 @@
             clear: both;
             padding: 10px;
         }
-        /*.item {
-            width: 100;
-        }
-        
-        @media (min-width:1200px) {
-            .col-1 {
-                width: 8.33%;
-            }
-            .col-2 {
-                width: 16.66%;
-            }
-            .col-3 {
-                width: 25%;
-            }
-            .col-4 {
-                width: 33.33%;
-            }
-            .col-5 {
-                width: 41.66%;
-            }
-            .col-6 {
-                width: 50%;
-            }
-            .col-7 {
-                width: 58.33%;
-            }
-            .col-8 {
-                width: 66.66%;
-            }
-            .col-9 {
-                width: 75%;
-            }
-            .col-10 {
-                width: 83.33%;
-            }
-            .col-11 {
-                width: 91.66%;
-            }
-            .col-12 {
-                width: 100%;
-            }*/
         
         @media (max-width:1200px) {
             .container {
@@ -109,21 +68,14 @@
                 grid-template-areas: "item"
             }
         }
-        /* @media  (max-width:991px) {
-            .section1 {
-                grid-template-columns: 1fr 1fr;
-                grid-template-rows: 1fr;
-                grid-template-areas: "section1"
-            }
-        }*/
         
         @media (max-width:991px) {
-            .section1 {
+            .container {
                 grid-template-columns: 1fr 1fr;
-                grid-template-rows: 1fr;
-                grid-template-areas: "section1"
+                grid-template-rows: 1fr 1fr;
+                grid-template-areas: "s1 s2" "s3 s3"
             }
-            /*.section1 {
+            .section1 {
                 grid-area: s1;
             }
             .section2 {
@@ -131,14 +83,14 @@
             }
             .section3 {
                 grid-area: s3;
-            }*/
+            }
         }
         
         @media (max-width:767px) {
             .container {
                 grid-template-columns: 1fr;
                 grid-template-rows: 1fr 1fr 1fr;
-                /*grid-template-areas: "item"*/
+                grid-template-areas: "item"
             }
         }
     </style>
@@ -158,7 +110,7 @@
             </p>
         </div>
 
-        <div class="item section1">
+        <div class="item section2">
             <h2 class="topic red">Beef</h2>
             <p class="para">
                 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has
