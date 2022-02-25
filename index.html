@@ -102,13 +102,28 @@
                 width: 100%;
             }*/
         
+        @media (max-width:1200px) {
+            .container {
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-rows: 1fr;
+                grid-template-areas: "setion1" "section2" "section3"
+            }
+        }
+        
         @media (max-width:550px) {
+            .container {
+                grid-template-columns: 1fr;
+                grid-template-rows: 1fr 1fr 1fr;
+                grid-template-areas: "item"
+            }
+        }
+        /*@media (max-width:550px) {
             .container {
                 grid-template-columns: 1fr;
                 grid-template-rows: 1fr 1fr 1fr;
                 grid-template-areas: "setion1" "section2" "section3"
             }
-        }
+        }*/
     }
     </style>
 </head>
