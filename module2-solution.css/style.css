@@ -1,0 +1,83 @@
+.menu {
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    font-weight: 500%;
+}
+
+.item {
+    background-color: rgb(145, 138, 151);
+    width: auto;
+    height: auto;
+    margin: 10px 10px 10px 10px;
+    padding: 0;
+    text-align: justify;
+    border: 1px black solid;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 5fr 1fr;
+    grid-column-gap: 20px;
+}
+
+.pink {
+    background-color: rgb(250, 153, 194);
+}
+
+.red {
+    background-color: rgb(241, 116, 100);
+}
+
+.yellow {
+    background-color: rgb(247, 234, 121);
+}
+
+.topic {
+    text-align: center;
+    width: 200px;
+    box-sizing: border-box;
+    height: auto;
+    float: right;
+    border-left: 1px black solid;
+    border-bottom: 1px black solid;
+    margin: 0%;
+}
+
+.para {
+    clear: both;
+    padding: 10px;
+}
+
+@media (min-width: 992px) {
+    .container {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: "item";
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .container {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "s1 s2" "s3 s3";
+    }
+    .section1 {
+        grid-area: s1;
+    }
+    .section2 {
+        grid-area: s2;
+    }
+    .section3 {
+        grid-area: s3;
+    }
+}
+
+@media (max-width: 767px) {
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: "item";
+    }
+}
